@@ -1,0 +1,13 @@
+.submit-btn .btn{
+    width: 15%;
+}
+.form-control, select{
+    border: 2px solid #2F5597;
+}
+.form-control:focus{
+    outline: none!important;
+    box-shadow: none !important;
+}
+.col-form-label{
+    font-weight: bold;
+}

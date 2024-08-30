@@ -1,0 +1,21 @@
+
+.login{
+    width: 485px;
+}
+.log-btn{
+    width: 62%;
+}
+.main-div h1{
+    position: absolute;
+    top: 20%;
+    left: 43%;
+}
+.form-control{
+    border: 2px solid #151616;
+}
+.form-control:focus{
+    /* border-color: #b7d6f5;  */
+  outline: none !important;
+  box-shadow: none !important;
+
+}

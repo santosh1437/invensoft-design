@@ -1,0 +1,81 @@
+<div class="row my-5">
+    <div class="col-md-6">
+        <div style="display: block;">
+            <canvas baseChart 
+                    [data]="barChartData"
+                    [options]="barChartOptions"
+                    [labels]="barChartLabels"
+                    [type]="barChartType"
+                    [legend]="barChartLegend">
+            </canvas>
+          </div>
+    </div>
+    <div class="col-md-6 ps-5">
+        <div style="display: block; width: 400px; height: 300px;">
+            <canvas baseChart 
+                    [data]="circleChartData"
+                    [options]="circleChartOptions"
+                    [type]="circleChartType">
+            </canvas>
+          </div>
+    </div>
+</div>
+<!-- <table class="table table-bordered">
+    ...
+  </table> -->
+ <div class="mx-5">
+   <table class="table table-bordered table-striped">
+     <thead>
+       <tr>
+         <th scope="col">ISBN</th>
+         <th scope="col">Book Name</th>
+         <th scope="col">Author</th>
+         <th scope="col">Roll No.</th>
+         <th scope="col">Name</th>
+         <th scope="col">Issued On</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td scope="row">1</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr>
+         <td scope="row">2</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr>
+         <td scope="row">3</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr>
+         <td scope="row">4</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr>
+         <td scope="row">5</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+     </tbody>
+   </table>
+ </div>

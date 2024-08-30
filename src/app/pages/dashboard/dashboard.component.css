@@ -1,0 +1,18 @@
+ul li{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 15px 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+svg{
+    width: 100px;
+    color: #2F5597;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+a span{
+    color: black;
+}

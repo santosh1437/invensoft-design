@@ -1,0 +1,108 @@
+<div class="add-button m-3">
+      <form [formGroup]="addButton">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label" >ISBN Number</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" formControlName="isbnNum">
+              <div *ngFor="let validation of validationErrorMessages.isbnNum">
+                <div class="text-danger" 
+                *ngIf="addButton.get('isbnNum').hasError(validation.type) && (addButton.get('isbnNum').dirty || addButton.get('isbnNum').touched)">
+                {{validation.message}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label" >Name</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" formControlName="name">
+              <div *ngFor="let validation of validationErrorMessages.name">
+                <div class="text-danger" 
+                *ngIf="addButton.get('name').hasError(validation.type) && (addButton.get('name').dirty || addButton.get('name').touched)">
+                {{validation.message}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label" >Author</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" formControlName="author">
+              <div *ngFor="let validation of validationErrorMessages.author">
+                <div class="text-danger" 
+                *ngIf="addButton.get('author').hasError(validation.type) && (addButton.get('author').dirty || addButton.get('author').touched)">
+                {{validation.message}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label" >Publication</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" formControlName="publication">
+              <div *ngFor="let validation of validationErrorMessages.publication">
+                <div class="text-danger" 
+                *ngIf="addButton.get('publication').hasError(validation.type) && (addButton.get('publication').dirty || addButton.get('publication').touched)">
+                {{validation.message}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label" >Details</label>
+            <div class="col-sm-5">
+              <textarea type="text" class="form-control" formControlName="details"></textarea>
+              <div *ngFor="let validation of validationErrorMessages.details">
+                <div class="text-danger" 
+                *ngIf="addButton.get('details').hasError(validation.type) && (addButton.get('details').dirty || addButton.get('details').touched)">
+                {{validation.message}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label" >Qty.</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" formControlName="qty">
+              <div *ngFor="let validation of validationErrorMessages.qty">
+                <div class="text-danger" 
+                *ngIf="addButton.get('qty').hasError(validation.type) && (addButton.get('qty').dirty || addButton.get('qty').touched)">
+                {{validation.message}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label" >Price</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" formControlName="price">
+              <div *ngFor="let validation of validationErrorMessages.price">
+                <div class="text-danger" 
+                *ngIf="addButton.get('price').hasError(validation.type) && (addButton.get('price').dirty || addButton.get('price').touched)">
+                {{validation.message}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label" >Branch</label>
+            <div class="col-sm-5">
+                <select class="form-select" aria-label="Default select example" formControlName="branch">
+                  <option selected>Open this select menu</option>
+                  <option value="1">IT</option>
+                  <option value="2">Civil</option>
+                  <option value="3">Mechanical</option>
+                </select>
+                <div *ngFor="let validation of validationErrorMessages.branch">
+                    <div class="text-danger" 
+                    *ngIf="addButton.get('branch').hasError(validation.type) && (addButton.get('branch').dirty || addButton.get('branch').touched)">
+                    {{validation.message}}
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="submit-btn text-center">
+              <div class="btn text-white" style="background-color: #4472C4;">Submit</div>
+          </div>
+      </form>
+</div>
